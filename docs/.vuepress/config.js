@@ -6,12 +6,18 @@ module.exports = {
         nav: [
             {text: 'VuePress', link: '/vuepress/'},
             {text: 'Git', link: '/git/'},
-            {text: 'Laravel', link: '/laravel/'}
+            {text: 'Laravel', link: '/laravel/'},
+            {text: 'GitHub', link: 'https://github.com/gopinfan/codesound'}
         ],
         sidebar: {
             
         },
         sidebarDepth: 2,
-        displayAllHeaders: true
+        displayAllHeaders: true,
+        lastUpdated: "最近更新",
+        repo: 'gopinfan/codesound',
+        repoLabel: '查看源码',
+        editLinks: true,
+        editLinkText: '改善此页面'
     }
 }

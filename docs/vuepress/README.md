@@ -508,3 +508,26 @@ git commit -m 'deploy'
 
 cd -
 ```
+
+#### 添加命令
+
+在 `package.json` 的 `scripts` 下添加 `"deploy": "bash deploy.sh"`：
+
+``` js
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.2"
+  }
+}
+```
+
+#### 运行部署命令
+
+``` bash
+yarn deploy
+```
