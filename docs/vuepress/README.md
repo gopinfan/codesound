@@ -1,6 +1,5 @@
 ---
 sidebar: auto
-sidebarDepth: 2
 ---
 
 # VuePress 快速上手

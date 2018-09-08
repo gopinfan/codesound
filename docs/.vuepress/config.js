@@ -7,16 +7,24 @@ module.exports = {
             {text: 'VuePress', link: '/vuepress/'},
             {text: 'Git', link: '/git/'},
             {text: 'Laravel', link: '/laravel/'},
-            {text: 'GitHub', link: 'https://github.com/gopinfan/codesound'}
         ],
         sidebar: {
-            
+            '/laravel/': [
+                {
+                    collapsable: false,
+                    children: [
+                        '/laravel/environment',
+                        '/laravel/create-project',
+                        '/laravel/deployment'
+                    ]
+                }
+            ]
         },
         sidebarDepth: 2,
         displayAllHeaders: true,
-        lastUpdated: "最近更新",
+        lastUpdated: "最后更新",
         repo: 'gopinfan/codesound',
-        repoLabel: '查看源码',
+        docsDir: 'docs',
         editLinks: true,
         editLinkText: '改善此页面'
     }
