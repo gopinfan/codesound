@@ -1,2 +1,3 @@
-# Git 常用命令
+# Git
 
+- [Git 教程](./tutorial.md)

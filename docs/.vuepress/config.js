@@ -15,7 +15,18 @@ module.exports = {
                     children: [
                         '/laravel/environment',
                         '/laravel/create-project',
-                        '/laravel/deployment'
+                        '/laravel/deployment',
+                        '/laravel/key-points',
+                        '/laravel/artisan-commands',
+                        '/laravel/packages'
+                    ]
+                }
+            ],
+            '/git/':[
+                {
+                    collapsable: false,
+                    children: [
+                        '/git/tutorial'
                     ]
                 }
             ]
