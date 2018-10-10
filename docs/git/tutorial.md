@@ -137,7 +137,17 @@ $ git reset --hard <commit-id>
 $ git checkout -- <file>
 ```
 
+撤销工作区所有修改的文件
+
+``` bash
+$ git checkout .
+```
+
 `git checkout` 其实是用版本库里的版本替换工作区的版本，无论修改还是删除。
+
+::: tip
+注意，只能撤销工作区修改的文件，新增的文件无法撤销。撤销新增的文件使用 `git clean -df`。
+:::
 
 #### 撤销暂存区的修改
 
@@ -145,6 +155,33 @@ $ git checkout -- <file>
 
 ``` bash
 $ git reset HEAD <file>
+```
+
+#### 撤销工作区和暂存区所有的修改
+
+撤销工作区和暂存区所有的修改，回退到最后一次commit的版本
+
+``` bash
+$ git reset --hard
+```
+
+### 清空工作区
+
+使用 `git clean` 命令删除工作区中所有没有tracked过的文件
+
+删除所有工作区中没有track过的文件和文件夹
+
+``` bash
+$ git clean -df
+```
+
+### 综合使用
+
+把工作区和暂存区的所有文件清空，包括修改的和新增的，回复到最后一次 commit 的状态
+
+``` bash
+$ git reset --hard
+$ git clean -df
 ```
 
 ### 删除文件
